@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+    <div class="header">
+      <a href="index.html" id="active">Home</a>
+      <div class="header-right">
+        <a href="login.html">Require Plasma</a>
+        <a href="donate_plasma.html">Donate Plasma</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+
+      </div>
+      <div class="login col-4">
+        <center>
+          <h1>Login</h1>
+          <input type="email" id="email" placeholder="Email ID"><br><br>
+          <input type="password"id="password" placeholder="Password"><br><br>
+          <input type="button" class="button" value="Log In" onclick="login() ">
+          <input type="button" class="button" value="Sign Up">
+        </center>
+        <div id="formFooter">
+          <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+      </div>
+      <div class="col-4">
+
+      </div>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>

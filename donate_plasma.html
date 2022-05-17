@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER!!</title>
+    <link rel="stylesheet" href="donate_plasma.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="scroll_to_TopButton.css">
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="config.js"></script>
+</head>
+<body class ="dp">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="header">
+        <a href="index.html" id="active">Home</a>
+        <div class="header-right">
+          <a href="login.html">Require Plasma</a>
+          <a href="donate_plasma.html">Donate Plasma</a>
+        </div>
+      </div>
+      <!-- <div class="img">
+        <img src="_104340443_1111plasma1.jpg" alt="Plasma Donation Img">
+      </div> -->
+    <div class="row">
+        <div class="col-13">
+
+        </div>
+    <div class="donate col-5">
+        <h1>Enter the donor details</h1><br>
+        <div class="block">
+            <label for="name">Name :</label>
+            <pre style="display: inline;">          </pre>
+            <input type="text" id="name" name="Name" placeholder="Enter your Full Name"><br><br>
+            <label for="bg">Gender :</label>
+            <pre style="display: inline;">                 </pre>   
+            <select name="Gender" id="gender">
+                <option value="Select your Gender">Select your Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+                <option value="Not to say">Not to say</option>
+            </select><br><br>
+            <label for="age">Age:</label>
+            <pre style="display: inline;">            </pre>
+            <input type="text" id="age"name="Age"placeholder="Age"><br><br>
+            <label for="contact">Mobile Number :</label>
+            <pre style="display: inline;">   </pre>
+            <input type="text" id="contact" name="Mobile Number" placeholder="Enter your Mobile Number"><br><br>
+            <label for="state">State :</label>
+            <pre style="display: inline;">           </pre>   
+            <input type="text" id="state" name="State" placeholder="Enter State"><br><br>
+            <label for="district">District :</label>
+            <pre style="display: inline;">         </pre>   
+            <input type="text" id="district" name="District" placeholder="Enter District"><br><br>
+            <label for="pincode">Pincode:</label>
+            <pre style="display: inline;">         </pre>   
+            <input type="text" id="pincode",name="Pincode" placeholder="Enter Pincode"><br><br>
+            <label for="aadhaar">Enter your <br> Aadhaar Number :</label>   
+            <pre style="display: inline;">      </pre>   
+            <input type="text" id = "aadhaar" name="Aadhaar" placeholder="XXXX XXXX XXXX XXXX"><br><br>
+            <label for="bg">Choose your  <br> Blood Group :</label>
+            <pre style="display: inline;">             </pre>   
+            <select name="blood_group" id="bg">
+                <option value="SelectBloodGroup">SelectBloodGroup</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select><br><br>
+            <label for="file">RTPCR Report:</label>
+            <pre style="display: inline;">       </pre>   
+            <input id ="file" name="foo" type="file" accept="image/jpeg,image/png,application/pdf,image/x-eps"><br><br>
+            <label for="date_of_covid">Date of Suspect: </label>
+            <pre style="display: inline;">          </pre>   
+            <input type="date"id="date_of_covid"><br><br>
+            <label for="date_of_recovery">Date of Recovery: </label>
+            <pre style="display: inline;">         </pre>   
+            <input type="date"id="date_of_recovery"><br><br>
+            <pre style="display: inline;">         </pre>   
+            <button id="button2">SUBMIT</button> 
+            <pre style="display: inline;">           </pre>   
+            <input type="button" class="button"value="RESET"onclick="window.location.reload()"><br>
+        </div>        
+    </div>
+    <div class="col-13">
+
+    </div>
+    </div>
+</body>
+<script src="donate.js"></script>
+<script src="scroll_to_TopButton.js"></script>
+</html>
